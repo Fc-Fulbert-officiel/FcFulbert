@@ -1,51 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.fcfulbert.fr/</loc>
-    <lastmod>2025-01-07</lastmod>
+    <loc>https://fc-fulbert-officiel.github.io/FcFulbert/</loc>
+    <lastmod>2025-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.fcfulbert.fr/equipe.html</loc>
-    <lastmod>2025-01-07</lastmod>
+    <loc>https://fc-fulbert-officiel.github.io/FcFulbert/equipe</loc>
+    <lastmod>2025-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.fcfulbert.fr/stade.html</loc>
-    <lastmod>2025-01-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://fc-fulbert-officiel.github.io/FcFulbert/classement</loc>
+    <lastmod>2025-10-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.fcfulbert.fr/histoire.html</loc>
-    <lastmod>2025-01-07</lastmod>
+    <loc>https://fc-fulbert-officiel.github.io/FcFulbert/histoire</loc>
+    <lastmod>2025-10-15</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.fcfulbert.fr/boutique.html</loc>
-    <lastmod>2025-01-07</lastmod>
+    <loc>https://fc-fulbert-officiel.github.io/FcFulbert/boutique</loc>
+    <lastmod>2025-10-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.fcfulbert.fr/contact.html</loc>
-    <lastmod>2025-01-07</lastmod>
+    <loc>https://fc-fulbert-officiel.github.io/FcFulbert/contact</loc>
+    <lastmod>2025-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.fcfulbert.fr/faq.html</loc>
-    <lastmod>2025-01-07</lastmod>
+    <loc>https://fc-fulbert-officiel.github.io/FcFulbert/faq</loc>
+    <lastmod>2025-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.fcfulbert.fr/mentions.html</loc>
-    <lastmod>2025-01-07</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
   </url>
 </urlset>
