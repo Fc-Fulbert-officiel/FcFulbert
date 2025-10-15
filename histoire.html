@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="G7x3wx0NpOx8-WUu8dkcUheNcrKRiG7FVrH9g3Tgy58" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Histoire du FC Fulbert | 70 Ans de Passion Footballistique à Chartres</title>
+    <meta name="description" content="Découvrez l'histoire fascinante du FC Fulbert depuis sa création en 1954. Des origines modestes aux grandes victoires, plongez dans 70 ans de passion footballistique à Chartres.">
+    <meta name="keywords" content="histoire FC Fulbert, création FC Fulbert, football Chartres histoire, club football Chartres, patrimoine sportif Chartres">
+    <meta name="author" content="FC Fulbert">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Histoire du FC Fulbert | 70 Ans de Football">
+    <meta property="og:description" content="Découvrez l'histoire fascinante du FC Fulbert depuis 1954">
+    <meta property="og:image" content="https://www.fcfulbert.fr/img/equipe/equipe.png">
+    <meta property="og:url" content="https://www.fcfulbert.fr/histoire">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/Logo-FcFulbert.png">
+    <link rel="shortcut icon" type="image/png" href="img/Logo-FcFulbert.png">
+    <link rel="apple-touch-icon" href="img/Logo-FcFulbert.png">
+    
+    <link rel="stylesheet" href="config/style.css">
+    
+    <style>
+        /* Styles pour le lecteur audio */
+        .audio-reader-section {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .audio-reader-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .audio-reader-title {
+            color: white;
+            font-size: 20px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .audio-controls {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .audio-btn {
+            background-color: white;
+            color: #2c3e50;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .audio-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .audio-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .audio-btn.playing {
+            background-color: #43e97b;
+            color: white;
+        }
+
+        .audio-icon {
+            font-size: 20px;
+        }
+
+        .audio-status {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 14px;
+            margin-top: 15px;
+        }
+
+        /* Section Histoire */
+        .histoire-section {
+            padding: 80px 20px;
+            background-color: #f8f9fa;
+        }
+
+        .histoire-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .histoire-chapter {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid #667eea;
+        }
+
+        .chapter-year {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .chapter-title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .chapter-text {
+            font-size: 17px;
+            line-height: 1.9;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .chapter-highlight {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 25px 0;
+            border-left: 4px solid #43e97b;
+        }
+
+        .chapter-highlight h4 {
+            color: #2c3e50;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .timeline-divider {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .timeline-line {
+            width: 2px;
+            height: 60px;
+            background: linear-gradient(to bottom, #667eea, #764ba2);
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            .histoire-chapter {
+                padding: 25px 20px;
+            }
+
+            .chapter-title {
+                font-size: 24px;
+            }
+
+            .chapter-text {
+                font-size: 16px;
+            }
+
+            .audio-controls {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .audio-btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><a href="/">FC Fulbert</a></div>
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="/">Accueil</a></li>
+                <li><a href="equipe">Équipe</a></li>
+                <li><a href="classement">Classement</a></li>
+                <li><a href="histoire">Histoire</a></li>
+                <li><a href="boutique">Boutique</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li><a href="faq">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="equipe-hero">
+        <div class="equipe-hero-content">
+            <div class="equipe-hero-badge">Depuis 1954</div>
+            <h1 class="equipe-hero-title">L'Histoire du FC Fulbert</h1>
+            <p class="equipe-hero-description">
+                Découvrez 70 ans de passion, d'émotions et de victoires qui ont façonné l'identité du FC Fulbert, club emblématique de Chartres.
+            </p>
+        </div>
+    </section>
+
+    <!-- Lecteur Audio -->
+    <section class="audio-reader-section">
+        <div class="audio-reader-container">
+            <h2 class="audio-reader-title">🎧 Écoutez l'histoire du FC Fulbert</h2>
+            <div class="audio-controls">
+                <button id="playBtn" class="audio-btn">
+                    <span class="audio-icon" id="playIcon">▶️</span>
+                    <span id="playText">Lire l'histoire</span>
+                </button>
+                <button id="pauseBtn" class="audio-btn" style="display: none;">
+                    <span class="audio-icon">⏸️</span>
+                    Pause
+                </button>
+                <button id="stopBtn" class="audio-btn">
+                    <span class="audio-icon">⏹️</span>
+                    Arrêter
+                </button>
+            </div>
+            <div class="audio-status" id="audioStatus">Prêt à écouter</div>
+        </div>
+    </section>
+
+    <!-- Contenu Histoire -->
+    <section class="histoire-section">
+        <div class="histoire-container">
+            
+            <!-- Chapitre 1 : Les Origines -->
+            <div class="histoire-chapter" data-chapter="1">
+                <div class="chapter-year">1954-1960</div>
+                <h2 class="chapter-title">Les Origines : Une Passion Qui Prend Vie</h2>
+                <p class="chapter-text">
+                    C'est en 1954, dans l'effervescence de l'après-guerre, que naît le Football Club Fulbert. Tout commence dans un petit café de Chartres, où une poignée de passionnés de football décident de créer un club qui porterait le nom de Fulbert, évêque de Chartres au XIe siècle, symbole de sagesse et de dévouement pour la ville.
+                </p>
+                <p class="chapter-text">
+                    Les débuts sont modestes : un terrain en terre battue prêté par la municipalité, des maillots cousus à la main par les épouses des joueurs, et une détermination sans faille. Le premier match officiel a lieu le 12 septembre 1954 contre l'AS Mainvilliers, se soldant par une victoire 3-2 qui restera gravée dans les mémoires comme le premier jalon d'une longue histoire.
+                </p>
+                <div class="chapter-highlight">
+                    <h4>Le Saviez-Vous ?</h4>
+                    <p>Les couleurs originales du club étaient le bleu et le blanc, en hommage aux couleurs de la ville de Chartres. Ce n'est qu'en 1967 que le rouge fut ajouté pour symboliser la passion des supporters.</p>
+                </div>
+                <p class="chapter-text">
+                    Les premières années sont marquées par une progression constante dans les championnats régionaux. L'équipe, composée principalement d'ouvriers et d'artisans locaux, incarne l'esprit communautaire de Chartres. Chaque match devient un événement populaire où tout le quartier se rassemble pour encourager "ses" joueurs.
+                </p>
+            </div>
+
+            <div class="timeline-divider">
+                <div class="timeline-line"></div>
+            </div>
+
+            <!-- Chapitre 2 : L'Âge d'Or -->
+            <div class="histoire-chapter" data-chapter="2">
+                <div class="chapter-year">1975-1985</div>
+                <h2 class="chapter-title">L'Âge d'Or : La Montée en Puissance</h2>
+                <p class="chapter-text">
+                    Les années 1970 marquent un tournant décisif dans l'histoire du FC Fulbert. Sous la direction de l'entraîneur légendaire Georges Martineau, le club connaît sa première montée en division d'honneur en 1975. Cette ascension n'est pas le fruit du hasard, mais le résultat d'un travail acharné et d'une vision stratégique claire.
+                </p>
+                <p class="chapter-text">
+                    En 1978, le FC Fulbert réalise l'exploit de remporter la Coupe Régionale du Centre face au grand favori, l'US Tours, sur le score impressionnant de 4-1. Ce match restera dans les annales comme l'un des plus beaux moments du club. Jean-Pierre Deschamps, attaquant vedette de l'époque, inscrit un triplé historique qui propulse le club sous les projecteurs nationaux.
+                </p>
+                <div class="chapter-highlight">
+                    <h4>Moment Historique</h4>
+                    <p>La finale de la Coupe Régionale de 1978 attire plus de 8 000 spectateurs au stade municipal de Chartres, un record absolu pour un match amateur dans la région.</p>
+                </div>
+                <p class="chapter-text">
+                    Cette période voit également la construction du nouveau stade du club en 1982, grâce à une mobilisation exceptionnelle des supporters et des institutions locales. Le Stade Fulbert, comme il sera nommé, devient rapidement un lieu emblématique du football chartrain, témoin de nombreuses victoires et célébrations.
+                </p>
+                <p class="chapter-text">
+                    L'équipe des années 80 est surnommée "La Génération Dorée". Composée de joueurs formés au club comme Michel Leblanc, Patrick Rousseau et le gardien emblématique André Moreau, elle enchaîne trois titres consécutifs de champion départemental entre 1983 et 1985.
+                </p>
+            </div>
+
+            <div class="timeline-divider">
+                <div class="timeline-line"></div>
+            </div>
+
+            <!-- Chapitre 3 : Les Années de Transition -->
+            <div class="histoire-chapter" data-chapter="3">
+                <div class="chapter-year">1990-2005</div>
+                <h2 class="chapter-title">Les Années de Transition : Épreuves et Résilience</h2>
+                <p class="chapter-text">
+                    Comme toute grande histoire, celle du FC Fulbert connaît aussi des moments plus difficiles. Les années 1990 sont marquées par des changements importants : plusieurs joueurs clés prennent leur retraite, et le club doit se réinventer pour rester compétitif.
+                </p>
+                <p class="chapter-text">
+                    En 1993, une relégation en division inférieure est un choc pour tout le club et ses supporters. Mais c'est justement dans l'adversité que se révèle le véritable caractère du FC Fulbert. Les supporters se mobilisent massivement, créant l'association "Les Amis du FC Fulbert" qui joue un rôle crucial dans la survie financière du club.
+                </p>
+                <p class="chapter-text">
+                    La fin des années 1990 marque le début d'une reconstruction patiente et méthodique. Le club mise désormais sur la formation de jeunes talents locaux. La création de l'école de football en 1997 devient un pilier fondamental de la stratégie du club. Cette initiative visionnaire permettra au FC Fulbert de former de nombreux joueurs qui feront la fierté du club dans les années suivantes.
+                </p>
+                <div class="chapter-highlight">
+                    <h4>L'Esprit Fulbert</h4>
+                    <p>Durant cette période difficile, le slogan "Ensemble, Plus Forts" devient la devise du club, symbolisant l'union indéfectible entre les joueurs, le staff et les supporters.</p>
+                </div>
+                <p class="chapter-text">
+                    En 2002, le FC Fulbert retrouve la division d'honneur, récompensant ainsi des années d'efforts et de persévérance. Cette remontée est célébrée comme un nouveau départ, une renaissance qui redonne espoir et fierté à toute la communauté chartrainee.
+                </p>
+            </div>
+
+            <div class="timeline-divider">
+                <div class="timeline-line"></div>
+            </div>
+
+            <!-- Chapitre 4 : La Renaissance -->
+            <div class="histoire-chapter" data-chapter="4">
+                <div class="chapter-year">2010-2020</div>
+                <h2 class="chapter-title">La Renaissance : Un Nouveau Souffle</h2>
+                <p class="chapter-text">
+                    Les années 2010 marquent le début d'une nouvelle ère pour le FC Fulbert. Sous l'impulsion d'une nouvelle direction dynamique menée par le président François Durand, le club adopte une approche moderne tout en respectant ses valeurs traditionnelles.
+                </p>
+                <p class="chapter-text">
+                    L'année 2012 est particulièrement mémorable avec la signature de Karim Benzali, jeune espoir du football français, qui choisit le FC Fulbert pour poursuivre sa progression. Son passage au club, bien que bref, apporte une visibilité médiatique inédite et inspire toute une génération de jeunes joueurs chartrains.
+                </p>
+                <p class="chapter-text">
+                    Le club investit massivement dans ses infrastructures. En 2015, le centre d'entraînement est entièrement rénové avec l'ajout de terrains synthétiques de dernière génération, une salle de musculation moderne et des vestiaires aux normes professionnelles. Ces améliorations permettent au FC Fulbert de rivaliser avec des clubs de catégories supérieures en termes de conditions d'entraînement.
+                </p>
+                <div class="chapter-highlight">
+                    <h4>Palmarès 2010-2020</h4>
+                    <p>2 Coupes Départementales (2013, 2017), 1 Championnat Régional (2016), et une participation historique aux 32èmes de finale de la Coupe de France en 2018.</p>
+                </div>
+                <p class="chapter-text">
+                    La saison 2016-2017 reste gravée dans les mémoires comme l'une des plus belles de l'histoire moderne du club. Une série de 18 matchs sans défaite en championnat, un jeu offensif spectaculaire qui fait le bonheur du public, et surtout, une ambiance festive et familiale qui redéfinit l'identité du FC Fulbert.
+                </p>
+                <p class="chapter-text">
+                    Cette période voit également l'émergence de nombreux talents issus du centre de formation : Lucas Martin, Théo Dubois et Alexandre Petit deviennent des figures emblématiques du club, prouvant que le travail de formation entrepris vingt ans plus tôt porte ses fruits.
+                </p>
+            </div>
+
+            <div class="timeline-divider">
+                <div class="timeline-line"></div>
+            </div>
+
+            <!-- Chapitre 5 : L'Époque Contemporaine -->
+            <div class="histoire-chapter" data-chapter="5">
+                <div class="chapter-year">2020-Aujourd'hui</div>
+                <h2 class="chapter-title">L'Époque Contemporaine : Vers de Nouveaux Horizons</h2>
+                <p class="chapter-text">
+                    Malgré les défis posés par la pandémie de COVID-19 en 2020, le FC Fulbert démontre une fois de plus sa résilience exceptionnelle. Le club adapte rapidement ses entraînements, met en place des protocoles sanitaires stricts et maintient le lien avec ses supporters grâce à des initiatives digitales innovantes.
+                </p>
+                <p class="chapter-text">
+                    La saison 2021-2022 marque le début d'une collaboration fructueuse avec plusieurs entreprises locales qui deviennent partenaires officiels du club. Cette synergie entre le monde sportif et économique permet au FC Fulbert de sécuriser son avenir financier tout en renforçant son ancrage local.
+                </p>
+                <p class="chapter-text">
+                    En 2023, le club célèbre dignement son 70ème anniversaire avec une semaine d'événements exceptionnels : match de gala contre d'anciennes gloires du football français, exposition retraçant l'histoire du club, et inauguration du Mur des Légendes où sont gravés les noms de tous ceux qui ont marqué l'histoire du FC Fulbert.
+                </p>
+                <div class="chapter-highlight">
+                    <h4>Le FC Fulbert Aujourd'hui</h4>
+                    <p>Avec plus de 300 licenciés, 15 équipes de différentes catégories d'âge, et une équipe première performante évoluant en championnat régional, le FC Fulbert est devenu bien plus qu'un simple club de football : c'est une institution chartrainee, un lieu de vie et de partage qui rassemble toutes les générations.</p>
+                </div>
+                <p class="chapter-text">
+                    La saison en cours 2024-2025 confirme les ambitions du club. Actuellement classé 3ème du championnat avec 45 points, le FC Fulbert affiche des performances remarquables avec 13 victoires en 20 matchs. L'équipe, dirigée par l'entraîneur Julien Mercier, allie expérience et jeunesse dans un jeu fluide et offensif qui ravit les supporters.
+                </p>
+                <p class="chapter-text">
+                    Mais au-delà des résultats sportifs, c'est l'esprit du club qui fait toute sa force. Des valeurs de respect, de solidarité et d'engagement qui se transmettent de génération en génération. Des bénévoles dévoués qui donnent de leur temps pour que chaque entraînement, chaque match soit une réussite. Des supporters fidèles qui, qu'il pleuve ou qu'il vente, sont toujours là pour encourager leurs joueurs.
+                </p>
+                <p class="chapter-text">
+                    Aujourd'hui, le FC Fulbert ne se contente plus de former des footballeurs : il contribue à l'éducation de citoyens responsables, véhicule des valeurs positives auprès de la jeunesse, et participe activement à la vie sociale et culturelle de Chartres.
+                </p>
+            </div>
+
+            <div class="timeline-divider">
+                <div class="timeline-line"></div>
+            </div>
+
+            <!-- Conclusion -->
+            <div class="histoire-chapter" data-chapter="6">
+                <div class="chapter-year">Héritage</div>
+                <h2 class="chapter-title">L'Héritage du FC Fulbert : Plus Qu'un Club</h2>
+                <p class="chapter-text">
+                    70 ans après sa création, le FC Fulbert est bien plus qu'un simple club de football. C'est un morceau de l'histoire de Chartres, un patrimoine vivant qui continue d'évoluer tout en restant fidèle à ses racines.
+                </p>
+                <p class="chapter-text">
+                    Des générations de familles chartraines ont partagé des moments inoubliables dans ce stade. Des amitiés indéfectibles se sont nouées dans les vestiaires. Des valeurs essentielles comme le dépassement de soi, l'esprit d'équipe et le respect de l'adversaire ont été transmises à des milliers de jeunes joueurs.
+                </p>
+                <p class="chapter-text">
+                    Le FC Fulbert, c'est aussi une histoire humaine extraordinaire faite de rencontres, d'émotions partagées, de joies intenses et parfois de déceptions qui rendent les victoires encore plus belles. C'est l'histoire de gens ordinaires qui, unis par une même passion, ont accompli des choses extraordinaires.
+                </p>
+                <div class="chapter-highlight">
+                    <h4>Notre Vision pour l'Avenir</h4>
+                    <p>Continuer à faire grandir le club, développer notre centre de formation, améliorer nos infrastructures, mais surtout préserver cet esprit unique qui fait du FC Fulbert une grande famille où chacun a sa place.</p>
+                </div>
+                <p class="chapter-text">
+                    Alors que le club entre dans sa 71ème année d'existence, une nouvelle page s'écrit. Une page qui sera rédigée par les joueurs actuels, les jeunes de l'école de football, les supporters fidèles et tous ceux qui croient en l'avenir du FC Fulbert.
+                </p>
+                <p class="chapter-text">
+                    Car l'histoire du FC Fulbert n'est pas terminée. Elle continue chaque weekend, à chaque entraînement, dans chaque geste technique, dans chaque encouragement des tribunes. Elle continue tant que brûle cette flamme, cette passion pour le football qui anime le cœur de tous ceux qui portent fièrement les couleurs bleu, blanc et rouge du club.
+                </p>
+                <p class="chapter-text">
+                    Aujourd'hui, nous sommes fiers de notre passé, confiants dans notre présent, et optimistes pour notre avenir. Le FC Fulbert continuera de faire battre le cœur du football chartrain, fidèle à sa devise : "Ensemble, Plus Forts".
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-logo"><a href="/">FC Fulbert</a></div>
+                <div class="footer-text">Projet étudiant - © 2025</div>
+            </div>
+
+            <ul class="footer-links">
+                <li><a href="/">Accueil</a></li>
+                <li><a href="equipe">Équipe</a></li>
+                <li><a href="classement">Classement</a></li>
+                <li><a href="histoire">Histoire</a></li>
+                <li><a href="boutique">Boutique</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li><a href="faq">FAQ</a></li>
+            </ul>
+
+            <div class="footer-social">
+                <a href="mentions" class="social-link">Mentions légales</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Menu burger
+        const burger = document.getElementById('burger');
+        const navMenu = document.getElementById('navMenu');
+        const navLinks = document.querySelectorAll('.nav-menu li a');
+
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                burger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Système de lecture audio avec Web Speech API
+        let speechSynthesis = window.speechSynthesis;
+        let utterance = null;
+        let isPlaying = false;
+        let currentChapter = 0;
+        
+        const playBtn = document.getElementById('playBtn');
+        const pauseBtn = document.getElementById('pauseBtn');
+        const stopBtn = document.getElementById('stopBtn');
+        const audioStatus = document.getElementById('audioStatus');
+        const playIcon = document.getElementById('playIcon');
+        const playText = document.getElementById('playText');
+
+        // Récupérer tout le texte des chapitres
+        function getAllText() {
+            const chapters = document.querySelectorAll('.histoire-chapter');
+            let fullText = "";
+            
+            chapters.forEach((chapter, index) => {
+                const year = chapter.querySelector('.chapter-year')?.textContent || '';
+                const title = chapter.querySelector('.chapter-title')?.textContent || '';
+                const texts = chapter.querySelectorAll('.chapter-text');
+                const highlights = chapter.querySelectorAll('.chapter-highlight');
+                
+                fullText += `Chapitre ${index + 1}. Période ${year}. ${title}. `;
+                
+                texts.forEach(text => {
+                    fullText += text.textContent + " ";
+                });
+                
+                highlights.forEach(highlight => {
+                    const highlightTitle = highlight.querySelector('h4')?.textContent || '';
+                    const highlightText = highlight.querySelector('p')?.textContent || '';
+                    fullText += `${highlightTitle}. ${highlightText}. `;
+                });
+            });
+            
+            return fullText;
+        }
+
+        function startReading() {
+            if (isPlaying) {
+                speechSynthesis.resume();
+                updateUI('playing');
+                return;
+            }
+
+            const text = getAllText();
+            utterance = new SpeechSynthesisUtterance(text);
+            
+            // Configuration de la voix
+            utterance.lang = 'fr-FR';
+            utterance.rate = 0.9;
+            utterance.pitch = 1;
+            utterance.volume = 1;
+
+            utterance.onstart = () => {
+                isPlaying = true;
+                updateUI('playing');
+            };
+
+            utterance.onend = () => {
+                isPlaying = false;
+                updateUI('stopped');
+            };
+
+            utterance.onerror = (event) => {
+                console.error('Erreur de lecture:', event);
+                audioStatus.textContent = 'Erreur lors de la lecture';
+                isPlaying = false;
+                updateUI('stopped');
+            };
+
+            speechSynthesis.speak(utterance);
+        }
+
+        function pauseReading() {
+            if (speechSynthesis.speaking) {
+                speechSynthesis.pause();
+                updateUI('paused');
+            }
+        }
+
+        function stopReading() {
+            speechSynthesis.cancel();
+            isPlaying = false;
+            updateUI('stopped');
+        }
+
+        function updateUI(state) {
+            switch(state) {
+                case 'playing':
+                    playBtn.style.display = 'none';
+                    pauseBtn.style.display = 'flex';
+                    audioStatus.textContent = '🔊 Lecture en cours...';
+                    playBtn.classList.add('playing');
+                    break;
+                case 'paused':
+                    playBtn.style.display = 'flex';
+                    pauseBtn.style.display = 'none';
+                    playIcon.textContent = '▶️';
+                    playText.textContent = 'Reprendre';
+                    audioStatus.textContent = '⏸️ Lecture en pause';
+                    break;
+                case 'stopped':
+                    playBtn.style.display = 'flex';
+                    pauseBtn.style.display = 'none';
+                    playIcon.textContent = '▶️';
+                    playText.textContent = 'Lire l\'histoire';
+                    audioStatus.textContent = 'Prêt à écouter';
+                    playBtn.classList.remove('playing');
+                    break;
+            }
+        }
+
+        // Event listeners
+        playBtn.addEventListener('click', startReading);
+        pauseBtn.addEventListener('click', pauseReading);
+        stopBtn.addEventListener('click', stopReading);
+
+        // Arrêter la lecture si l'utilisateur quitte la page
+        window.addEventListener('beforeunload', () => {
+            if (isPlaying) {
+                speechSynthesis.cancel();
+            }
+        });
+    </script>
+</body>
+
+</html>

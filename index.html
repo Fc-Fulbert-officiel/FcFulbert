@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="G7x3wx0NpOx8-WUu8dkcUheNcrKRiG7FVrH9g3Tgy58" />
+    <title>Fc Fulbert</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/Logo-FcFulbert.png">
+    <link rel="shortcut icon" type="image/png" href="img/Logo-FcFulbert.png">
+    <link rel="apple-touch-icon" href="img/Logo-FcFulbert.png">
+    
+    <link rel="stylesheet" href="config/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><a href="/">FC Fulbert</a></div>
+            <div class="burger" id="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="/">Acceuil</a></li>
+                <li><a href="equipe">Équipe</a></li>
+                <li><a href="classement">Classement</a></li>
+                <li><a href="histoire">Histoire</a></li>
+                <li><a href="boutique">Boutique</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li><a href="faq">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">Projet Étudiant 2025</div>
+
+            <h1 class="hero-title">FC Fulbert</h1>
+
+            <p class="hero-subtitle">La passion du football à Chartres</p>
+
+            <p class="hero-description">
+                Découvrez l'histoire, les joueurs et l'esprit d'équipe qui font de FC Fulbert
+                bien plus qu'un simple club de football. Rejoignez notre communauté et vivez
+                chaque match avec intensité et passion.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="equipe" class="btn btn-primary">Découvrir l'équipe</a>
+                <a href="contact" class="btn btn-secondary">Nous contacter</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section class="equipe-section">
+        <div class="decoration-circle circle-1"></div>
+        <div class="decoration-circle circle-2"></div>
+
+        <div class="equipe-container">
+            <div class="equipe-content">
+                <div class="equipe-badge">Saison 2024-2025</div>
+
+                <h2 class="equipe-title">Notre Équipe</h2>
+
+                <p class="equipe-subtitle">Unis par la passion, animés par la victoire</p>
+
+                <p class="equipe-description">
+                    Le FC Fulbert, c'est avant tout une famille soudée par l'amour du football.
+                    Nos joueurs, notre staff et nos supporters forment une communauté exceptionnelle
+                    qui fait la fierté de Chartres. Ensemble, nous écrivons l'histoire de notre club
+                    match après match, avec détermination et esprit d'équipe.
+                </p>
+
+                <div class="equipe-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">25</span>
+                        <span class="stat-label">Joueurs</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">Victoires</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">8</span>
+                        <span class="stat-label">Années</span>
+                    </div>
+                </div>
+
+                <div class="equipe-buttons">
+                    <a href="#" class="btn btn-primary">Voir l'effectif complet</a>
+                </div>
+            </div>
+
+            <div class="equipe-image">
+                <div class="image-wrapper">
+                    <img src="img/equipe/equipe.png" alt="Équipe FC Fulbert 2024-2025">
+                    <div class="image-overlay">
+                        <div class="overlay-title">FC Fulbert 2024-2025</div>
+                        <div class="overlay-subtitle">Une équipe, une passion, un destin</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section class="stade-section">
+        <div class="stade-container">
+            <div class="stade-header">
+                <h2 class="stade-title">Visualiser le Stade</h2>
+                <p class="stade-subtitle">Explorez notre stade sous tous les angles</p>
+            </div>
+
+            <div class="stade-viewer">
+                <div class="stade-image-container">
+                    <img src="img/stade/stade.webp" alt="Stade FC Fulbert" class="stade-image">
+
+                    <!-- Hotspot 1 -->
+                    <div class="hotspot hotspot-1" onclick="openVideo('Façade principale Castellana', 'video1')">
+                        <div class="hotspot-button">
+                            <div class="play-icon">▶</div>
+                            <span class="hotspot-text">1 - Façade principale Castellana</span>
+                        </div>
+                    </div>
+
+                    <!-- Hotspot 2 -->
+                    <div class="hotspot hotspot-2" onclick="openVideo('Place Sagrados Corazones', 'video2')">
+                        <div class="hotspot-button">
+                            <div class="play-icon">▶</div>
+                            <span class="hotspot-text">2 - Place Sagrados Corazones</span>
+                        </div>
+                    </div>
+
+                    <!-- Hotspot 3 -->
+                    <div class="hotspot hotspot-3"
+                        onclick="openVideo('Carrefour de la Castellana avec Rafael Salgado', 'video3')">
+                        <div class="hotspot-button">
+                            <div class="play-icon">▶</div>
+                            <span class="hotspot-text">3 - Carrefour de la Castellana avec Rafael Salgado</span>
+                        </div>
+                    </div>
+
+                    <!-- Hotspot 4 -->
+                    <div class="hotspot hotspot-4"
+                        onclick="openVideo('Carrefour de Padre Damián avec Rafael Salgado', 'video4')">
+                        <div class="hotspot-button">
+                            <div class="play-icon">▶</div>
+                            <span class="hotspot-text">4 - Carrefour de Padre Damián avec Rafael Salgado</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="stade-cta">
+                <a href="stade" class="btn btn-secondary">Voir le stade</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Modal vidéo -->
+    <div class="video-modal" id="videoModal">
+        <div class="video-content">
+            <div class="video-header">
+                <h3 class="video-title" id="videoTitle">Titre de la vidéo</h3>
+                <button class="close-button" onclick="closeVideo()">×</button>
+            </div>
+            <div class="video-wrapper" id="videoWrapper">
+                <!-- Vidéo 1 -->
+                <video id="video1" class="video-player" controls preload="metadata" itemscope
+                    itemtype="https://schema.org/VideoObject">
+                    <source src="videos/video-stade-facade-principale.webm" type="video/mp4">
+                    <meta itemprop="name" content="Façade principale Castellana">
+                    <meta itemprop="description" content="Visite du stade FC Fulbert - Façade principale Castellana">
+                    <meta itemprop="thumbnailUrl" content="images/thumb-video1.jpg">
+                    Votre navigateur ne supporte pas la lecture de vidéos.
+                </video>
+
+                <!-- Vidéo 2 -->
+                <video id="video2" class="video-player" controls preload="metadata" itemscope
+                    itemtype="https://schema.org/VideoObject">
+                    <source src="videos/video-stade-place.webm" type="video/mp4">
+                    <meta itemprop="name" content="Place Sagrados Corazones">
+                    <meta itemprop="description" content="Visite du stade FC Fulbert - Place Sagrados Corazones">
+                    <meta itemprop="thumbnailUrl" content="images/thumb-video2.jpg">
+                    Votre navigateur ne supporte pas la lecture de vidéos.
+                </video>
+
+                <!-- Vidéo 3 -->
+                <video id="video3" class="video-player" controls preload="metadata" itemscope
+                    itemtype="https://schema.org/VideoObject">
+                    <source src="videos/video-stade-carrefour-1.webm" type="video/mp4">
+                    <meta itemprop="name" content="Carrefour de la Castellana avec Rafael Salgado">
+                    <meta itemprop="description"
+                        content="Visite du stade FC Fulbert - Carrefour de la Castellana avec Rafael Salgado">
+                    <meta itemprop="thumbnailUrl" content="images/thumb-video3.jpg">
+                    Votre navigateur ne supporte pas la lecture de vidéos.
+                </video>
+
+                <!-- Vidéo 4 -->
+                <video id="video4" class="video-player" controls preload="metadata" itemscope
+                    itemtype="https://schema.org/VideoObject">
+                    <source src="videos/video-stade-carrefour-2.webm" type="video/mp4">
+                    <meta itemprop="name" content="Carrefour de Padre Damián avec Rafael Salgado">
+                    <meta itemprop="description"
+                        content="Visite du stade FC Fulbert - Carrefour de Padre Damián avec Rafael Salgado">
+                    <meta itemprop="thumbnailUrl" content="images/thumb-video4.jpg">
+                    Votre navigateur ne supporte pas la lecture de vidéos.
+                </video>
+            </div>
+            <div class="video-navigation">
+                <button class="nav-video-btn" onclick="switchVideo('video1')">1 - Façade principale</button>
+                <button class="nav-video-btn" onclick="switchVideo('video2')">2 - Place Sagrados</button>
+                <button class="nav-video-btn" onclick="switchVideo('video3')">3 - Carrefour Castellana</button>
+                <button class="nav-video-btn" onclick="switchVideo('video4')">4 - Carrefour Padre Damián</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="boutique-section">
+        <div class="decoration-shape shape-1"></div>
+        <div class="decoration-shape shape-2"></div>
+
+        <div class="boutique-container">
+            <div class="boutique-header">
+                <div class="boutique-badge">🛍️ Bientôt disponible</div>
+                <h2 class="boutique-title">Notre Boutique</h2>
+                <p class="boutique-subtitle">
+                    Affichez vos couleurs avec notre collection exclusive FC Fulbert
+                </p>
+            </div>
+
+            <div class="products-grid">
+                <!-- Produit 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/boutique/maillot.png" alt="Maillots Officiels FC Fulbert" class="img-default">
+                        <img src="img/boutique/maillot2.png" alt="Maillots Officiels FC Fulbert" class="img-hover">
+                        <div class="product-tag">Nouveauté</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Maillots Officiels</h3>
+                        <p class="product-description">
+                            Collection complète de maillots domicile, extérieur et third. Technologie respirante et
+                            confort optimal.
+                        </p>
+                        <div class="product-footer">
+                            <div>
+                                <span class="product-price-label">À partir de</span>
+                                <span class="product-price">59€</span>
+                            </div>
+                            <a href="boutique" class="product-btn">Découvrir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/boutique/casquette.png" alt="Accessoires FC Fulbert" class="img-default">
+                        <img src="img/boutique/casquette2.png" alt="Accessoires FC Fulbert" class="img-hover">
+                        <div class="product-tag">Tendance</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Accessoires</h3>
+                        <p class="product-description">
+                            Casquettes, écharpes, sacs et plus encore. Tout pour afficher fièrement vos couleurs au
+                            quotidien.
+                        </p>
+                        <div class="product-footer">
+                            <div>
+                                <span class="product-price-label">À partir de</span>
+                                <span class="product-price">19€</span>
+                            </div>
+                            <a href="boutique" class="product-btn">Découvrir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/boutique/crampons.png" alt="Équipement Sport FC Fulbert" class="img-default">
+                        <img src="img/boutique/crampons2.png" alt="Équipement Sport FC Fulbert" class="img-hover">
+                        <div class="product-tag">Performance</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Équipement Sport</h3>
+                        <p class="product-description">
+                            Équipement d'entraînement professionnel : survêtements, chaussures, protections et matériel
+                            technique.
+                        </p>
+                        <div class="product-footer">
+                            <div>
+                                <span class="product-price-label">À partir de</span>
+                                <span class="product-price">39€</span>
+                            </div>
+                            <a href="boutique" class="product-btn">Découvrir</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Produit 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="img/boutique/maillot-collector.png" alt="Collection Collector FC Fulbert"
+                            class="img-default">
+                        <img src="img/boutique/maillot-collector2.png" alt="Collection Collector FC Fulbert"
+                            class="img-hover">
+                        <div class="product-tag">Exclusif</div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Collection Collector</h3>
+                        <p class="product-description">
+                            Pièces rares et éditions limitées pour les vrais supporters. Maillots dédicacés et objets
+                            uniques.
+                        </p>
+                        <div class="product-footer">
+                            <div>
+                                <span class="product-price-label">À partir de</span>
+                                <span class="product-price">79€</span>
+                            </div>
+                            <a href="boutique" class="product-btn">Découvrir</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="boutique-cta">
+                <h3 class="cta-title">Prêt à supporter votre équipe ?</h3>
+                <p class="cta-description">
+                    Explorez toute notre collection et trouvez les produits parfaits pour vivre votre passion du FC
+                    Fulbert à 100%
+                </p>
+                <a href="boutique" class="btn btn-primary">Visiter la boutique complète</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-logo"><a href="/">FC Fulbert</a></div>
+                <div class="footer-text">Projet étudiant - © 2025</div>
+            </div>
+
+            <ul class="footer-links">
+                <li><a href="/">Acceuil</a></li>
+                <li><a href="equipe">Équipe</a></li>
+                <li><a href="classement">Classement</a></li>
+                <li><a href="histoire">Histoire</a></li>
+                <li><a href="boutique">Boutique</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li><a href="faq">FAQ</a></li>
+            </ul>
+
+            <div class="footer-social">
+                <a href="mentions" class="social-link">Mentions légales</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="config/javascript.js"></script>
+</body>
+
+</html>

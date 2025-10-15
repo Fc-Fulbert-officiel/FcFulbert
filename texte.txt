@@ -1,0 +1,27 @@
+<!-- PAGE ACCUEIL (index.html) -->
+<title>FC Fulbert - Club de Football à Chartres | Saison 2024-2025</title>
+<meta name="description" content="Découvrez le FC Fulbert, club de football à Chartres. Suivez notre équipe, nos matchs et rejoignez notre communauté de passionnés. Saison 2024-2025.">
+
+<!-- PAGE ÉQUIPE (equipe.html) -->
+<title>Équipe FC Fulbert 2024-2025 | Joueurs & Effectif Complet</title>
+<meta name="description" content="Découvrez l'effectif complet du FC Fulbert pour la saison 2024-2025 : 12 joueurs, composition d'équipe en 4-3-3, statistiques et profils des joueurs.">
+
+<!-- PAGE HISTOIRE (histoire.html) -->
+<title>Histoire du FC Fulbert | Fondation, Palmarès & Évolution du Club</title>
+<meta name="description" content="Découvrez l'histoire du FC Fulbert depuis sa fondation en 2017 : palmarès, moments clés, évolution et traditions du club de football de Chartres.">
+
+<!-- PAGE BOUTIQUE (boutique.html) -->
+<title>Boutique FC Fulbert | Maillots, Accessoires & Équipements Officiels</title>
+<meta name="description" content="Achetez les produits officiels du FC Fulbert : maillots domicile/extérieur, accessoires, équipements sportifs et articles collectors. Livraison rapide.">
+
+<!-- PAGE CONTACT (contact.html) -->
+<title>Contact FC Fulbert | Nous Joindre, Inscription & Informations</title>
+<meta name="description" content="Contactez le FC Fulbert : formulaire de contact, adresse, téléphone, email. Renseignements sur les inscriptions, partenariats et événements.">
+
+<!-- PAGE FAQ (faq.html) -->
+<title>FAQ FC Fulbert | Questions Fréquentes sur le Club de Chartres</title>
+<meta name="description" content="Trouvez les réponses à vos questions sur le FC Fulbert : inscriptions, tarifs, horaires d'entraînement, compétitions et informations pratiques.">
+
+<!-- PAGE MENTIONS LÉGALES (mentions.html) -->
+<title>Mentions Légales | FC Fulbert - Club de Football Chartres</title>
+<meta name="description" content="Mentions légales du site FC Fulbert : informations sur l'éditeur, hébergeur, protection des données personnelles et conditions d'utilisation.">

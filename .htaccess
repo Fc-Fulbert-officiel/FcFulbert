@@ -1,0 +1,27 @@
+# Activer la réécriture d'URL
+RewriteEngine On
+RewriteBase /
+
+# Forcer HTTPS (optionnel mais recommandé)
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Rediriger les anciennes URL avec .html vers les nouvelles sans .html
+RewriteCond %{THE_REQUEST} \s/+(.+)\.html[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L,NE]
+
+# Réécrire les URL propres vers les fichiers .html
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
+
+# Supprimer index.html de l'URL et rediriger vers la racine
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+
+# Servir index.html par défaut pour la racine
+DirectoryIndex index.html
+
+# Désactiver l'affichage des répertoires
+Options -Indexes
