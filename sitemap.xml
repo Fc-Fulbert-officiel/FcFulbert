@@ -27,7 +27,19 @@
   <url>
     <loc>https://fc-fulbert-officiel.github.io/FcFulbert/boutique</loc>
     <lastmod>2025-10-15</lastmod>
-    <changefreq>weekly</changefreq>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://fc-fulbert-officiel.github.io/FcFulbert/img/boutique/maillot.png</image:loc>
+      <image:title>Maillot Domicile FC Fulbert 2024-2025</image:title>
+      <image:caption>Maillot officiel domicile du FC Fulbert Chartres</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://fc-fulbert-officiel.github.io/FcFulbert/img/boutique/maillot2.png</image:loc>
+      <image:title>Maillot Extérieur FC Fulbert 2024-2025</image:title>
+      <image:caption>Maillot officiel extérieur du FC Fulbert Chartres</image:caption>
+    </image:image>
+  </url>
     <priority>0.8</priority>
   </url>
   <url>
