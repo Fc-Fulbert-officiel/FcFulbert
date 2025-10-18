@@ -155,82 +155,222 @@
                     </div>
                 </div>
 
-                <!-- Tableau de Classement -->
+                <!-- Tableau de Classement Interactif -->
                 <div class="classement-table-container">
-                    <h3 class="table-title">Tableau du Championnat 2024-2025</h3>
-                    <table class="classement-table">
-                        <thead>
-                            <tr>
-                                <th>Pos</th>
-                                <th>Équipe</th>
-                                <th class="center">J</th>
-                                <th class="center">G</th>
-                                <th class="center">N</th>
-                                <th class="center">P</th>
-                                <th class="center">Pts</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="position top3">1</td>
-                                <td class="team-name">AS Chartres</td>
-                                <td class="center">20</td>
-                                <td class="center">15</td>
-                                <td class="center">3</td>
-                                <td class="center">2</td>
-                                <td class="center points">48</td>
-                            </tr>
-                            <tr>
-                                <td class="position top3">2</td>
-                                <td class="team-name">Dreux FC</td>
-                                <td class="center">20</td>
-                                <td class="center">14</td>
-                                <td class="center">4</td>
-                                <td class="center">2</td>
-                                <td class="center points">46</td>
-                            </tr>
-                            <tr class="fc-fulbert">
-                                <td class="position">3</td>
-                                <td class="team-name"><strong>FC Fulbert</strong></td>
-                                <td class="center">20</td>
-                                <td class="center">13</td>
-                                <td class="center">6</td>
-                                <td class="center">1</td>
-                                <td class="center points">45</td>
-                            </tr>
-                            <tr>
-                                <td class="position">4</td>
-                                <td class="team-name">Lucé Sports</td>
-                                <td class="center">20</td>
-                                <td class="center">11</td>
-                                <td class="center">5</td>
-                                <td class="center">4</td>
-                                <td class="center points">38</td>
-                            </tr>
-                            <tr>
-                                <td class="position">5</td>
-                                <td class="team-name">Mainvilliers FC</td>
-                                <td class="center">20</td>
-                                <td class="center">10</td>
-                                <td class="center">6</td>
-                                <td class="center">4</td>
-                                <td class="center points">36</td>
-                            </tr>
-                            <tr>
-                                <td class="position">6</td>
-                                <td class="team-name">Vernouillet United</td>
-                                <td class="center">20</td>
-                                <td class="center">9</td>
-                                <td class="center">5</td>
-                                <td class="center">6</td>
-                                <td class="center points">32</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="classement-legend">
-                    <strong>Légende :</strong> J = Matchs joués | G = Victoires | N = Matchs nuls | P = Défaites | Pts = Points
+                    <div class="classement-table-header">
+                        <h3 class="table-title">Tableau du Championnat 2024-2025</h3>
+                        <div class="classement-filters">
+                            <select class="classement-filter" id="championshipFilter">
+                                <option value="regional">Championnat Régional</option>
+                                <option value="coupe">Coupe de France</option>
+                            </select>
+                            <select class="classement-filter" id="seasonFilter">
+                                <option value="2024-2025">Saison 2024-2025</option>
+                                <option value="2023-2024">Saison 2023-2024</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="classement-table-responsive">
+                        <table class="classement-table">
+                            <thead>
+                                <tr>
+                                    <th class="col-pos">#</th>
+                                    <th class="col-club">Club</th>
+                                    <th class="col-stat">MJ</th>
+                                    <th class="col-stat">G</th>
+                                    <th class="col-stat">N</th>
+                                    <th class="col-stat">P</th>
+                                    <th class="col-stat">BP</th>
+                                    <th class="col-stat">BC</th>
+                                    <th class="col-stat">DB</th>
+                                    <th class="col-pts">Pts</th>
+                                    <th class="col-form">5 derniers</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="team-row promotion-zone">
+                                    <td class="col-pos">
+                                        <span class="position-badge first">1</span>
+                                    </td>
+                                    <td class="col-club">
+                                        <div class="team-info">
+                                            <img src="img/classement/FcFulbert_AsChartres.jpg" alt="AS Chartres" class="team-logo">
+                                            <span class="team-name">AS Chartres</span>
+                                        </div>
+                                    </td>
+                                    <td class="col-stat">20</td>
+                                    <td class="col-stat">15</td>
+                                    <td class="col-stat">3</td>
+                                    <td class="col-stat">2</td>
+                                    <td class="col-stat">42</td>
+                                    <td class="col-stat">18</td>
+                                    <td class="col-stat positive">+24</td>
+                                    <td class="col-pts"><strong>48</strong></td>
+                                    <td class="col-form">
+                                        <div class="form-indicators">
+                                            <span class="form-icon win" title="Victoire">V</span>
+                                            <span class="form-icon win" title="Victoire">V</span>
+                                            <span class="form-icon win" title="Victoire">V</span>
+                                            <span class="form-icon draw" title="Nul">N</span>
+                                            <span class="form-icon win" title="Victoire">V</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="team-row promotion-zone">
+                                    <td class="col-pos">
+                                        <span class="position-badge second">2</span>
+                                    </td>
+                                    <td class="col-club">
+                                        <div class="team-info">
+                                            <img src="img/classement/FcFulbert_Dreux.jpg" alt="Dreux FC" class="team-logo">
+                                            <span class="team-name">Dreux FC</span>
+                                        </div>
+                                    </td>
+                                    <td class="col-stat">20</td>
+                                    <td class="col-stat">14</td>
+                                    <td class="col-stat">4</td>
+                                    <td class="col-stat">2</td>
+                                    <td class="col-stat">38</td>
+                                    <td class="col-stat">16</td>
+                                    <td class="col-stat positive">+22</td>
+                                    <td class="col-pts"><strong>46</strong></td>
+                                    <td class="col-form">
+                                        <div class="form-indicators">
+                                            <span class="form-icon win" title="Victoire">V</span>
+                                            <span class="form-icon win" title="Victoire">V</span>
+                                            <span class="form-icon draw" title="Nul">N</span>
+                                            <span class="form-icon win" title="Victoire">V</span>
+                                            <span class="form-icon win" title="Victoire">V</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="team-row fc-fulbert-highlight promotion-zone">
+                                    <td class="col-pos">
+                                        <span class="position-badge third">3</span>
+                                    </td>
+                                    <td class="col-club">
+                                        <div class="team-info">
+                                            <img src="img/Logo-FcFulbert.png" alt="FC Fulbert" class="team-logo">
+                                            <span class="team-name"><strong>FC Fulbert</strong></span>
+                                        </div>
+                                    </td>
+                                    <td class="col-stat">20</td>
+                                    <td class="col-stat">13</td>
+                                    <td class="col-stat">6</td>
+                                    <td class="col-stat">1</td>
+                                    <td class="col-stat">36</td>
+                                    <td class="col-stat">24</td>
+                                    <td class="col-stat positive">+12</td>
+                                    <td class="col-pts"><strong>45</strong></td>
+                                    <td class="col-form">
+                                        <div class="form-indicators">
+                                            <span class="form-icon win" title="Victoire">V</span>
+                                            <span class="form-icon win" title="Victoire">V</span>
+                                            <span class="form-icon draw" title="Nul">N</span>
+                                            <span class="form-icon loss" title="Défaite">D</span>
+                                            <span class="form-icon win" title="Victoire">V</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="team-row">
+                                    <td class="col-pos">
+                                        <span class="position-badge">4</span>
+                                    </td>
+                                    <td class="col-club">
+                                        <div class="team-info">
+                                            <img src="img/classement/FcFulbert_Luce.jpg" alt="Lucé Sports" class="team-logo">
+                                            <span class="team-name">Lucé Sports</span>
+                                        </div>
+                                    </td>
+                                    <td class="col-stat">20</td>
+                                    <td class="col-stat">11</td>
+                                    <td class="col-stat">5</td>
+                                    <td class="col-stat">4</td>
+                                    <td class="col-stat">32</td>
+                                    <td class="col-stat">22</td>
+                                    <td class="col-stat positive">+10</td>
+                                    <td class="col-pts"><strong>38</strong></td>
+                                    <td class="col-form">
+                                        <div class="form-indicators">
+                                            <span class="form-icon loss" title="Défaite">D</span>
+                                            <span class="form-icon win" title="Victoire">V</span>
+                                            <span class="form-icon draw" title="Nul">N</span>
+                                            <span class="form-icon win" title="Victoire">V</span>
+                                            <span class="form-icon draw" title="Nul">N</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="team-row">
+                                    <td class="col-pos">
+                                        <span class="position-badge">5</span>
+                                    </td>
+                                    <td class="col-club">
+                                        <div class="team-info">
+                                            <img src="img/classement/FcFulbert_Mainvilier.jpg" alt="Mainvilliers FC" class="team-logo">
+                                            <span class="team-name">Mainvilliers FC</span>
+                                        </div>
+                                    </td>
+                                    <td class="col-stat">20</td>
+                                    <td class="col-stat">10</td>
+                                    <td class="col-stat">6</td>
+                                    <td class="col-stat">4</td>
+                                    <td class="col-stat">28</td>
+                                    <td class="col-stat">20</td>
+                                    <td class="col-stat positive">+8</td>
+                                    <td class="col-pts"><strong>36</strong></td>
+                                    <td class="col-form">
+                                        <div class="form-indicators">
+                                            <span class="form-icon draw" title="Nul">N</span>
+                                            <span class="form-icon loss" title="Défaite">D</span>
+                                            <span class="form-icon win" title="Victoire">V</span>
+                                            <span class="form-icon win" title="Victoire">V</span>
+                                            <span class="form-icon draw" title="Nul">N</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="team-row">
+                                    <td class="col-pos">
+                                        <span class="position-badge">6</span>
+                                    </td>
+                                    <td class="col-club">
+                                        <div class="team-info">
+                                            <img src="img/classement/FcFulber_Vernouillet.jpg" alt="Vernouillet United" class="team-logo">
+                                            <span class="team-name">Vernouillet United</span>
+                                        </div>
+                                    </td>
+                                    <td class="col-stat">20</td>
+                                    <td class="col-stat">9</td>
+                                    <td class="col-stat">5</td>
+                                    <td class="col-stat">6</td>
+                                    <td class="col-stat">26</td>
+                                    <td class="col-stat">24</td>
+                                    <td class="col-stat positive">+2</td>
+                                    <td class="col-pts"><strong>32</strong></td>
+                                    <td class="col-form">
+                                        <div class="form-indicators">
+                                            <span class="form-icon loss" title="Défaite">D</span>
+                                            <span class="form-icon draw" title="Nul">N</span>
+                                            <span class="form-icon loss" title="Défaite">D</span>
+                                            <span class="form-icon win" title="Victoire">V</span>
+                                            <span class="form-icon draw" title="Nul">N</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="classement-legend">
+                        <div class="legend-item">
+                            <span class="legend-color promotion"></span>
+                            <span>Zone de promotion</span>
+                        </div>
+                        <div class="legend-separator">|</div>
+                        <div class="legend-stats">
+                            <strong>Statistiques :</strong> MJ = Matchs joués | G = Victoires | N = Nuls | P = Défaites | BP = Buts pour | BC = Buts contre | DB = Différence de buts | Pts = Points
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

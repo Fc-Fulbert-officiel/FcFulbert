@@ -2675,99 +2675,374 @@ body {
     text-transform: uppercase;
 }
 
-/* Tableau de Classement */
+/* Tableau de Classement Interactif */
 .classement-table-container {
     background: white;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.classement-table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 30px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #2c3e50 100%);
+    border-bottom: 3px solid #667eea;
+}
+
+.classement-table-header .table-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff !important;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.classement-filters {
+    display: flex;
+    gap: 15px;
+}
+
+.classement-filter {
+    padding: 10px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.classement-filter:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.classement-filter option {
+    background: #2c3e50;
+    color: white;
+}
+
+.classement-table-responsive {
+    overflow-x: auto;
 }
 
 .classement-table {
     width: 100%;
     border-collapse: collapse;
+    min-width: 800px;
 }
 
 .classement-table thead tr {
     background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-    color: white;
 }
 
 .classement-table thead th {
-    padding: 15px;
-    text-align: left;
-    font-size: 14px;
-    font-weight: 600;
+    padding: 18px 12px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.9);
+    border-bottom: 2px solid #667eea;
 }
 
-.classement-table thead th.center {
+.classement-table thead th.col-pos {
     text-align: center;
+    width: 60px;
+}
+
+.classement-table thead th.col-club {
+    text-align: left;
+    min-width: 200px;
+}
+
+.classement-table thead th.col-stat {
+    width: 50px;
+}
+
+.classement-table thead th.col-pts {
+    width: 60px;
+    color: #ffd700;
+}
+
+.classement-table thead th.col-form {
+    min-width: 150px;
 }
 
 .classement-table tbody tr {
-    border-bottom: 1px solid #f0f0f0;
-    transition: background-color 0.3s ease;
+    border-bottom: 1px solid #e8e8e8;
+    transition: all 0.3s ease;
 }
 
 .classement-table tbody tr:hover {
     background-color: #f8f9fa;
+    transform: scale(1.01);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 .classement-table tbody td {
-    padding: 15px;
-}
-
-.classement-table tbody td.center {
+    padding: 18px 12px;
     text-align: center;
-}
-
-.classement-table .position {
-    font-weight: bold;
-}
-
-.classement-table .position.top3 {
-    color: #43e97b;
-}
-
-.classement-table .team-name {
-    font-weight: 600;
-}
-
-.classement-table .points {
-    font-weight: bold;
-}
-
-/* Ligne FC Fulbert en surbrillance */
-.classement-table tbody tr.fc-fulbert {
-    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
-    border-left: 4px solid #667eea;
-}
-
-.classement-table tbody tr.fc-fulbert .position {
-    color: #667eea;
-}
-
-.classement-table tbody tr.fc-fulbert .team-name {
-    font-weight: 700;
+    font-size: 14px;
     color: #2c3e50;
 }
 
-.classement-table tbody tr.fc-fulbert .points {
+.classement-table .col-pos {
+    text-align: center;
+}
+
+.classement-table .position-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 15px;
+    background: #f0f0f0;
+    color: #666;
+}
+
+.classement-table .position-badge.first {
+    background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+    color: #1a1a2e;
+    box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+}
+
+.classement-table .position-badge.second {
+    background: linear-gradient(135deg, #c0c0c0 0%, #e8e8e8 100%);
+    color: #1a1a2e;
+    box-shadow: 0 4px 12px rgba(192, 192, 192, 0.4);
+}
+
+.classement-table .position-badge.third {
+    background: linear-gradient(135deg, #cd7f32 0%, #e89a5d 100%);
+    color: white;
+    box-shadow: 0 4px 12px rgba(205, 127, 50, 0.4);
+}
+
+.classement-table .col-club {
+    text-align: left;
+}
+
+.team-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.team-logo {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+.team-name {
+    font-weight: 600;
+    font-size: 15px;
+    color: #2c3e50;
+}
+
+.classement-table .col-stat {
+    font-weight: 500;
+    color: #666;
+}
+
+.classement-table .col-stat.positive {
+    color: #27ae60;
+    font-weight: 700;
+}
+
+.classement-table .col-stat.negative {
+    color: #e74c3c;
+    font-weight: 700;
+}
+
+.classement-table .col-pts {
+    font-weight: 800;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+/* Zone de promotion */
+.classement-table tbody tr.promotion-zone {
+    border-left: 4px solid #27ae60;
+    background: linear-gradient(to right, rgba(39, 174, 96, 0.05) 0%, transparent 100%);
+}
+
+/* Ligne FC Fulbert en surbrillance */
+.classement-table tbody tr.fc-fulbert-highlight {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.15) 100%);
+    border-left: 4px solid #667eea;
+}
+
+.classement-table tbody tr.fc-fulbert-highlight:hover {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+}
+
+.classement-table tbody tr.fc-fulbert-highlight .team-name {
     color: #667eea;
+    font-weight: 800;
+}
+
+.classement-table tbody tr.fc-fulbert-highlight .col-pts {
+    color: #667eea;
+}
+
+/* Indicateurs de forme (5 derniers) */
+.form-indicators {
+    display: flex;
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.form-icon.win {
+    background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+    color: white;
+    box-shadow: 0 2px 8px rgba(39, 174, 96, 0.4);
+}
+
+.form-icon.draw {
+    background: linear-gradient(135deg, #95a5a6 0%, #bdc3c7 100%);
+    color: white;
+    box-shadow: 0 2px 8px rgba(149, 165, 166, 0.4);
+}
+
+.form-icon.loss {
+    background: linear-gradient(135deg, #e74c3c 0%, #ec7063 100%);
+    color: white;
+    box-shadow: 0 2px 8px rgba(231, 76, 60, 0.4);
+}
+
+.form-icon:hover {
+    transform: scale(1.15);
 }
 
 /* Légende du tableau */
 .classement-legend {
-    margin-top: 20px;
-    padding: 15px;
-    background: #f8f9fa;
-    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 30px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-top: 1px solid #dee2e6;
     font-size: 13px;
     color: #666;
+    flex-wrap: wrap;
 }
 
-.classement-legend strong {
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.legend-color.promotion {
+    background: #27ae60;
+}
+
+.legend-separator {
+    color: #ccc;
+    font-weight: 300;
+}
+
+.legend-stats {
+    flex: 1;
+}
+
+.legend-stats strong {
     color: #2c3e50;
+    font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .classement-table-header {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+    
+    .classement-filters {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .classement-filter {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .classement-table-header {
+        padding: 20px;
+    }
+    
+    .table-title {
+        font-size: 18px;
+    }
+    
+    .classement-table thead th {
+        padding: 12px 8px;
+        font-size: 11px;
+    }
+    
+    .classement-table tbody td {
+        padding: 12px 8px;
+        font-size: 13px;
+    }
+    
+    .team-logo {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .team-name {
+        font-size: 13px;
+    }
+    
+    .form-icon {
+        width: 22px;
+        height: 22px;
+        font-size: 10px;
+    }
+    
+    .classement-legend {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        font-size: 12px;
+    }
 }
 
 /* Section Résultats */
